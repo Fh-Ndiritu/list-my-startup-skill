@@ -57,3 +57,8 @@ aibest.io,AI directory,https://aibest.io,https://aibest.io,Unknown,No,No,Skip: d
 aitoptools.com,AI directory,https://aitoptools.com,https://aitoptools.com,Yes,No,Unknown,Skip: unclear,Requires login; free-tier status unclear.
 Dang.ai,AI directory,https://dang.ai,https://dang.ai/submit,Yes,No,Yes,Skip: paid,Magic-link login leads to a pricing paywall; free tier historically needs a reciprocal badge.
 Tekpon,SaaS review,https://tekpon.com,https://tekpon.com/submit-your-software,Unknown,No,Unknown,Skip: dead,Submit form 404s; likely vendor-managed.
+Top Business Software,Software review aggregator,https://topbusinesssoftware.com,https://topbusinesssoftware.com,Unknown,No,No,Claim,Auto-generated reviews page often already exists; look for a claim/contact option to correct copy and links.
+BusinessHunt,Business directory,https://businesshunt.co,https://businesshunt.co/submit,Unknown,No,No,Claim,Auto-generated business profile may already exist; claim/verify to edit details and links.
+AppBrain,Android app directory,https://www.appbrain.com,https://www.appbrain.com,No,No,No,Claim,Auto-indexes Google Play apps; only relevant if the product ships an Android app. Claim via the Play developer console link.
+Slashdot,Software directory,https://slashdot.org,https://sourceforge.net/software/vendors/new,No,No,No,Via SourceForge,Slashdot Media listing is generated from the SourceForge vendor submission - do not submit separately.
+Capterra India,Software review (regional),https://capterra.in,https://www.capterra.com/vendors/sign-up,Yes,No,No,Via Capterra,Regional Capterra page auto-created from the main Capterra/Digital-Markets submission.
