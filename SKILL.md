@@ -47,6 +47,8 @@ If anything is ambiguous (which of two stats is correct, exact founding year, ca
 - **Company facts**: legal name, founded year, HQ city, contact email, phone, and social URLs (LinkedIn, YouTube, Facebook, X, TikTok).
 
 ## Phase 3 — Directory targeting
+**Start from the bundled `directories.csv`** if it ships with this skill — ~58 vetted directories with their category, submit URL, per-site gotcha, and a **Recommendation** (Do / Refresh / High value / Claim / Optional / Skip-with-reason). Work the ones marked Do / Refresh / High value that fit the product, skip the rest, and extend the file with any niche directories for the product's vertical.
+
 Maintain a **tracker CSV** (`directory_tracker.csv`), one row per directory. Columns:
 `Site, Category, Homepage, Submit/Edit URL, Status, Listing Live, Backlink, Login Required, Reciprocal Link Req, Paid, Profile Editable, Priority, Notes, Last Updated`
 
@@ -87,6 +89,6 @@ Batch independent browser actions where possible. After a wrong-tier or blocked 
 ## Deliverables
 - `positioning_brief.md` — the source of truth for all copy.
 - `copy_pack.md` (optional) — per-platform paste-ready copy at each length.
-- `directory_tracker.csv` — every directory with status and date; resumable across sessions.
+- `directory_tracker.csv` — every directory with status and date; resumable across sessions (seed it from `directories.csv`).
 
 Share these files and give a short, honest summary: how many listings are **live**, **submitted / in review**, or **refreshed**; which are **blocked and need the person's action** (login, verification, paid); and which were **skipped and why**.
