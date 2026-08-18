@@ -1,0 +1,59 @@
+Site,Category,Homepage,Submit/Edit URL,Login,Reciprocal Badge,Paid,Recommendation,Notes
+Product Hunt,Launch platform,https://producthunt.com,https://www.producthunt.com/posts/new,Yes,No,No,Do (login),High-traffic launch platform; product pages are editable. Multiple launches can coexist.
+AlternativeTo,Software directory,https://alternativeto.net,https://alternativeto.net/manage-item/,Yes,No,No,Refresh (login),"DR ~92, dofollow. Usually already listed - use Contribute > Edit/Update to refresh (new-item submit is blocked by duplicate name). Edits go to moderation."
+Startup Buffer,Startup directory,https://startupbuffer.com,https://startupbuffer.com/startup/submit,Yes,No,No,Do (login),Simple startup submission; confirm the listing goes live afterward.
+aitools.inc,AI directory,https://aitools.inc,https://aitools.inc/submit,Yes,No,No,Do (login),Shows 'Thanks!' on submit; verify it actually publishes.
+Uneed,Launch/AI directory,https://uneed.best,https://www.uneed.best/submit-a-tool,Yes,No,No,Do (login),Tool submission; refresh the description if already there.
+PitchWall,Startup directory,https://pitchwall.co,https://pitchwall.co/submit,Yes,No,Partial,Skip: paid,Free tier gives a NOFOLLOW link + 30-day wait; dofollow only on paid ($49-$99).
+Smol Launch,Launch/indie directory,https://smollaunch.com,https://smollaunch.com/submit,Yes,No,No,Do (login),"Editable listing: tagline, description, one-time pricing."
+GitHub,Code/dev,https://github.com,https://github.com/new,Yes,No,No,Do (login),Create a user/org for the product; add a profile README (repo named same as the username) for a rich indexed page. Bio link is nofollow but it is a real brand presence.
+LinkedIn Company Page,Social/professional,https://linkedin.com,https://www.linkedin.com/company/setup/new/,Yes,No,No,Do (login),Edit Page > Details for About/Overview + website; Page info for tagline. Watch for an 'another admin editing' lock - use one fresh session.
+Softonic,Software download/review,https://en.softonic.com,https://en.softonic.com,Unknown,No,No,Claim,Auto-generated/scraped listing often already exists; request a claim before you can edit.
+Trust Traffic,Traffic/startup stats,https://trust-traffic.com,https://trust-traffic.com,Unknown,No,No,Claim,Auto-generated stats page; usually not editable - check for a claim option.
+Hacker News,Community/news,https://news.ycombinator.com,https://news.ycombinator.com/submit,Yes,No,No,Optional,"Not an editable profile; a 'Show HN' post is a one-time launch, not a listing."
+SaaSHub,SaaS directory,https://saashub.com,https://www.saashub.com/submit,Yes,No,No,Skip: blocked,Registration CAPTCHA is often unsolvable and reset emails frequently never arrive. Only viable with a pre-existing working login.
+FutureTools,AI directory,https://futuretools.io,https://www.futuretools.io/submit-a-tool,No,No,No,Do (public form),"No login. Cloudflare Turnstile usually auto-passes. Curated review before publishing; wants a clear, jargon-free description."
+Gartner Digital Markets,B2B review network,https://www.gartner.com/reviews,https://www.gartner.com/reviews,Yes,No,No,High value,Gates the Capterra/GetApp/Software Advice syndication (see Capterra). Account setup can be involved.
+Crunchbase,Company database,https://crunchbase.com,https://www.crunchbase.com/add-new,Yes,No,No,Do (login),DR ~91. Create a company profile; goes to moderation.
+Wellfound,Startup/jobs,https://wellfound.com,https://wellfound.com/company,Yes,No,No,Do (login),"Create the company via the recruiter onboarding (Raising-money path): logo, markets, one-line pitch. High DA."
+F6S,Startup community,https://f6s.com,https://www.f6s.com/company/signup,Yes,No,No,Do (login),"Rich profile (logo, tagline, long description, markets, socials, stage); auto-saves on blur - verify on the public page."
+Capterra,Software review,https://capterra.com,https://www.capterra.com/vendors/sign-up,Yes,No,No,High value,"One submission at the Gartner/Digital-Markets 'get-listed' flow syndicates to Capterra + GetApp + Software Advice. Pick the specific category, add features, media, real pricing."
+GetApp,Software review,https://getapp.com,https://www.capterra.com/vendors/sign-up,Yes,No,No,Via Capterra,Syndicated from the single Capterra/Digital-Markets submission - do not submit separately.
+Software Advice,Software review,https://softwareadvice.com,https://www.capterra.com/vendors/sign-up,Yes,No,No,Via Capterra,Syndicated from the single Capterra/Digital-Markets submission - do not submit separately.
+Trustpilot,Review platform,https://www.trustpilot.com,https://business.trustpilot.com/,Yes,No,No,Do (login),"Claim the business profile at business.trustpilot.com: logo, description, category. Free tier publishes and collects reviews."
+Clutch,B2B services review,https://clutch.co,https://clutch.co/get-listed,Yes,No,No,Optional,B2B agency-oriented; weaker fit for self-serve SaaS. Free listing via account.
+GoodFirms,B2B software review,https://goodfirms.co,https://www.goodfirms.co/get-listed,Yes,No,No,Do (login),"8-step software listing (logo, descriptions, category with % focus, features, screenshot+video, pricing model, support hours). Rejects em-dashes/periods in tagline & vendor name. Free Partner tier."
+SourceForge,Software directory,https://sourceforge.net,https://sourceforge.net/software/vendors/new,No,No,No,Do (public form),"Public vendor request form, no login (name, logo, description, category, price, platforms, support). Also covers Slashdot Media. Make an account later to manage if approved."
+Startup Stash,Resource directory,https://startupstash.com,https://startupstash.com/add-startup,Unknown,No,No,Skip: dead,Submit page tends to 404; recheck for a current URL.
+Indie Hackers,Community,https://www.indiehackers.com,https://www.indiehackers.com/products,Yes,No,No,Do (login),"Create a product page (logo, tagline, website); a first post adds a second link."
+StackShare,Dev stack directory,https://stackshare.io,https://stackshare.io/create-stack,Yes,No,No,Optional,Tech-stack focus; low fit for non-developer products.
+Bark,Services marketplace,https://bark.com,https://www.bark.com/en/gb/for-professionals,Yes,No,No,Skip: fit,Lead-gen for service pros; weak fit for a software product.
+StartupBase,Startup directory,https://startupbase.io,https://startupbase.io/submit,Yes,No,No,Skip: engagement wall,Submission stays disabled until you upvote 5 launches and write 3 reviews of OTHER products. Manual only.
+Launching Next,Startup directory,https://launchingnext.com,https://www.launchingnext.com/submit,No,No,No,Do (public form),No login. Ends with a 'what is 2+3?' bot-check - the person enters the answer + submits. Free (paid fast-track optional).
+StartupBlink,Startup ecosystem map,https://startupblink.com,https://www.startupblink.com/startups,Yes,No,No,Refresh (login),Requires email verification before adding; often already listed (blocks duplicate website). City/industry are autocompletes.
+DealMyApp,Indie app directory,https://dealmyapp.com,https://dealmyapp.com/list,Yes,No,No,Do (login),Showcase listing + images; ~2MB/image limit (compress). Turn off 'open to offers' if not selling.
+Startup Map Africa,Regional startup directory,https://startupmapafrica.com,https://startupmapafrica.com/submit,Yes,No,No,Refresh (regional),Regional; existing profiles common; edit route may 404 - email the site if so.
+BetaList,Launch platform,https://betalist.com,https://betalist.com/submit,Yes,No,No,Skip: selective,Selective and has rejected submissions; low control.
+G2,Software review,https://g2.com,https://www.g2.com/products/new,Yes,No,No,Blocked,High value but needs a verified business email or LinkedIn. Revisit with a work email.
+TrustRadius,Software review,https://trustradius.com,https://www.trustradius.com,Yes,No,Yes,Skip: paid,Enterprise/paid vendor service.
+SaaSworthy,SaaS directory,https://saasworthy.com,https://www.saasworthy.com,Unknown,No,No,Skip: dead,Submit page 404 - recheck later.
+Futurepedia,AI directory,https://futurepedia.io,https://www.futurepedia.io/submit-tool,Yes,No,Yes,Skip: paid,Paid only (~$247+).
+There's An AI For That,AI directory,https://theresanaiforthat.com,https://theresanaiforthat.com/submit,Yes,No,Yes,Skip: paid,Paid only (~$49+); no free tier.
+submitaitools.org,AI directory,https://submitaitools.org,https://submitaitools.org,Yes,Yes,No,Skip: badge,Free listing requires a footer backlink badge - against the no-reciprocal rule.
+toolpilot.ai,AI directory,https://toolpilot.ai,https://toolpilot.ai,Yes,Yes,No,Skip: badge,Free listing requires a footer backlink badge.
+toolify.ai,AI directory,https://toolify.ai,https://www.toolify.ai/submit,Yes,No,Yes,Skip: paid,Paid only (~$99).
+aitools.fyi,AI directory,https://aitools.fyi,https://aitools.fyi/submit,Yes,No,Yes,Skip: paid,Paid only (~$30).
+topai.tools,AI directory,https://topai.tools,https://topai.tools/submit,Yes,No,Yes,Skip: paid,Paid only (~$47+).
+aivalley.ai,AI directory,https://aivalley.ai,https://aivalley.ai/submit,Yes,No,No,Skip: broken,Form fills but server-errors on submit; retry later.
+aitoolhunt.com,AI directory,https://aitoolhunt.com,https://www.aitoolhunt.com/submit-tool,Unknown,No,No,Skip: dead,Submit page 404.
+supertools.me,AI directory,https://supertools.me,https://supertools.me,Unknown,No,No,Skip: dead,Site down / unreachable.
+opentools.com,API service,https://opentools.com,https://opentools.com,Unknown,No,No,Skip: n/a,Not a directory (API service).
+insidr.ai,AI directory,https://insidr.ai,https://insidr.ai,Unknown,No,No,Skip: dead,Submit page missing (404).
+easywithai.com,AI directory,https://easywithai.com,https://easywithai.com/submit,Unknown,No,No,Skip: dead,Submit page missing (404).
+allthingsai.com,AI directory,https://allthingsai.com,https://allthingsai.com,Unknown,No,No,Skip: dead,Site timed out.
+gpte.ai,AI directory,https://gpte.ai,https://gpte.ai,Unknown,No,No,Skip: avoid,Redirects to a spam/ad network - avoid.
+ai-collection.info,AI directory,https://ai-collection.info,https://ai-collection.info,Unknown,No,No,Skip: dead,Site down.
+aibest.io,AI directory,https://aibest.io,https://aibest.io,Unknown,No,No,Skip: dead,Redirect loop.
+aitoptools.com,AI directory,https://aitoptools.com,https://aitoptools.com,Yes,No,Unknown,Skip: unclear,Requires login; free-tier status unclear.
+Dang.ai,AI directory,https://dang.ai,https://dang.ai/submit,Yes,No,Yes,Skip: paid,Magic-link login leads to a pricing paywall; free tier historically needs a reciprocal badge.
+Tekpon,SaaS review,https://tekpon.com,https://tekpon.com/submit-your-software,Unknown,No,Unknown,Skip: dead,Submit form 404s; likely vendor-managed.
