@@ -47,7 +47,17 @@ If anything is ambiguous (which of two stats is correct, exact founding year, ca
 - **Company facts**: legal name, founded year, HQ city, contact email, phone, and social URLs (LinkedIn, YouTube, Facebook, X, TikTok).
 
 ## Phase 3 — Directory targeting
-**Start from the bundled `directories.csv`** if it ships with this skill — ~58 vetted directories with their category, submit URL, per-site gotcha, and a **Recommendation** (Do / Refresh / High value / Claim / Optional / Skip-with-reason). Work the ones marked Do / Refresh / High value that fit the product, skip the rest, and extend the file with any niche directories for the product's vertical.
+**Start from the bundled `directories.csv`** if it ships with this skill — ~60 vetted directories with their category, submit URL, per-site gotcha, and a **Recommendation** (Do / Refresh / High value / Claim / Optional / Skip-with-reason). Work the ones marked Do / Refresh / High value / Claim that fit the product, skip the rest, and extend the file with any niche directories for the product's vertical.
+
+### Directory worklist — the vetted starting set
+Work the ones that fit the product; skip the rest. Submit URLs and per-site gotchas for every entry are in `directories.csv` — this inline list keeps the skill usable even when that file isn't shipped alongside it.
+- **Create a listing (log in, then fill every field):** Product Hunt, Smol Launch, Indie Hackers, Crunchbase, Wellfound, F6S, Startup Buffer, Uneed, aitools.inc, DealMyApp, Trustpilot, GoodFirms, GitHub (org + profile-README repo), LinkedIn Company Page.
+- **Public form, no login:** FutureTools, SourceForge (also generates the Slashdot listing), Launching Next.
+- **One submission syndicates to several:** the Capterra / Gartner Digital Markets get-listed flow publishes to Capterra + GetApp + Software Advice + regional Capterra pages (e.g. Capterra India) — submit once, never separately.
+- **Refresh, don't duplicate (usually already listed — edit the existing item):** AlternativeTo, StartupBlink, Startup Map Africa.
+- **Claim an auto-generated page:** Softonic, Trust Traffic, Top Business Software, BusinessHunt, AppBrain (only if the product ships an Android app).
+- **High value but gated — revisit with a work email / business account:** G2, Gartner Digital Markets.
+- **Optional / niche:** Clutch, StackShare, Hacker News (a 'Show HN' post is a one-time launch, not a profile).
 
 Maintain a **tracker CSV** (`directory_tracker.csv`), one row per directory. Columns:
 `Site, Category, Homepage, Submit/Edit URL, Status, Listing Live, Backlink, Login Required, Reciprocal Link Req, Paid, Profile Editable, Priority, Notes, Last Updated`
