@@ -51,7 +51,7 @@ Drop `SKILL.md` (and `directories.csv`) into your Claude Cowork skills, or save 
 ## What you get
 
 - `positioning_brief.md` - the source of truth for all copy.
-- `directory_tracker.csv` - this run's log; every directory with status and date; resumable across sessions.
+- `directory_tracker.csv` - this run's log; every directory with status and date. Saved to a **durable folder** (your Downloads or a folder you connect) as `<product>-directory-tracker.csv`, so it survives closed tabs, ended sessions, and **new conversations** - the next run loads it back and resumes instead of re-listing what's already done.
 - `directories.csv` - the shared registry (recommendation per directory), updated and contributed back via a PR.
 
 MIT licensed. PRs that improve the registry are the whole point - send them.
