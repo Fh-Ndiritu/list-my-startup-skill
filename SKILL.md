@@ -76,7 +76,7 @@ After the run, reconcile what you learned against the bundled directories.csv an
    - A directory that is **dead / 404 / security-flagged** -> flip to `Skip: <reason>` so nobody wastes a turn on it again.
    - A recommendation that **changed** since last time (e.g. a free site went paid, or a blocked one now works with a login) -> update the row and add a `(verified <month>)` note.
 2. **Open the PR** against the community repo (`Fh-Ndiritu/list-my-startup-skill`, or the repo the skill was installed from). The person is logged into GitHub in the browser; do it via the web UI: create a new branch, edit `directories.csv` (and SKILL.md / README.md if the workflow itself changed), commit, and open the pull request. Title it e.g. `registry: <N> updates from a <product> run (<month>)` and in the body list each add/flip with its one-line reason. **Never force-push, never touch `main` directly, never merge - open the PR and leave it for review.**
-3. **Editor gotcha.** GitHub's in-browser code editor auto-indents and can mangle pasted lists (it has corrupted this very file before - double `- - ` bullets). Set file contents by focusing the editor, selecting all (clear it), then `document.execCommand('insertText', false, content)` with the content in a plain template literal - this inserts verbatim without auto-continuation. Verify the diff renders before opening the PR.
+3. **Editor gotcha.** GitHub's in-browser code editor auto-indents and can mangle pasted lists (it has corrupted this very file before - double `- - ` bullets). Set file contents by focusing the editor, selecting all (clear it), then `document.execCommand('insertText', false, content)` with the content in a plain template literal - this inserts verbatim without auto-continuation. Verify the diff renders before opening the PR. Transport-free alternative (2026-10): inject a temporary `<input type=file>` into the editor page, upload a local JSON/CSV patch into it with the file-upload tool, read it in-page with `await input.files[0].text()`, merge it into `view.state.doc` (replace changed rows by Site name, append new ones) and dispatch once - no base64 to retype, and `doc.toString()===expected` can be asserted exactly. Remove the injected input before committing.
 4. **Respect the guardrails even here:** opening a PR is fine, but do not merge it, do not change licensing, and do not commit anything the person hasn't seen.
 
 ## Browser-automation playbook (hard-won)
@@ -91,6 +91,12 @@ After the run, reconcile what you learned against the bundled directories.csv an
 - **OAuth "choose an account" / consent screens**: never pick an account or grant consent - that's the person's login step.
 - **Duplicate/exists guards**: on "name/website already exists", the item is created - pivot to finding and **editing** it rather than making a second one.
 - **Cookie/consent banners**: choose the most privacy-preserving option; if the only choice is Accept, accept to proceed.
+- **Silent forms**: when Submit shows no message (or the form just clears - Softr does this on success), read the network log for the POST and its status before re-clicking; a second click usually creates a duplicate.
+- **Background tabs**: real keystrokes and some screenshots can fail in a tab that is not in front, and Google Forms ignore typed text there - prefer a value-set helper that dispatches input/change events.
+- **Blocking alerts**: if a submit freezes the tab (renderer timeouts), it is usually a native alert the extension cannot read or dismiss; navigate away, record the outcome as unknown and hand that site to the person.
+- **Hidden decoy forms**: some pages carry a hidden header/Elementor form plus the real embedded Google/Tally form - submit the embedded one (open its URL directly).
+- **Auto-opened checkouts**: a few free flows auto-open an optional paid checkout after success (AppRater -> Whop, Joinly -> PayPro); navigate away, never fill payment fields.
+- **Human-written-copy rules**: if a directory says AI-generated text is rejected, do not submit generated copy - hand that one to the person.
 
 ## Deliverables
 - positioning_brief.md - the source of truth for all copy.
